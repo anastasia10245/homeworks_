@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Store</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="login">
+                <a href="registration.html" class="login-btn">
+                    <i class="fa fa-sign-in"></i> Login
+                </a>
+            </div>
+        </header>
+        <div class="main-content">
+            <aside>
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">House Plants</a></li>
+                    <li><a href="#">Potter Plants</a></li>
+                    <li><a href="#">Seeds</a></li>
+                    <li><a href="#">Small Plants</a></li>
+                    <li><a href="#">Big Plants</a></li>
+                    <li><a href="#">Succulents</a></li>
+                    <li><a href="#">Terrariums</a></li>
+                    <li><a href="#">Gardening</a></li>
+                    <li><a href="#">Accessories</a></li>
+                </ul>
+                <div class="sale-banner">
+                    <img src="images/image.png" alt="Super Sale">
+                </div>
+            </aside>
+            <div>        
+                <nav class="nav-bar">
+                    <ul class="nav-menu">
+                        <li><a href="#">All Plants</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                    <div class="sort">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort">
+                            <option value="default">Default sorting</option>
+                        </select>
+                        <div>&nbsp; <img src="images/Arrow - Down 2.png"/></div>
+                    </div>
+                </nav>
+                <section class="product-grid">
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/barberton_daisy.png" alt="Barberton Daisy">
+                            <h4>Barberton Daisy</h4>
+                            <p>$119.00</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/product-20-320x320 1.png" alt="Angel Wing Begonia">
+                            <h4>Angel Wing Begonia</h4>
+                            <p>$169.00</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/image 2.png" alt="African Violet">
+                            <h4>African Violet</h4>
+                            <p>$199.00</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/01 3.png" alt="Beach Spider Lily">
+                            <h4>Beach Spider Lily</h4>
+                            <p>$129.00</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/image 7.png" alt="Blushing Bromeliad">
+                            <h4>Blushing Bromeliad</h4>
+                            <p>$139.00</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/image 8.png" alt="Aluminum Plant">
+                            <h4>Aluminum Plant</h4>
+                            <p>$179.00</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/image 9.png" alt="Beach Spider Lily">
+                            <h4>Beach Spider Lily</h4>
+                            <p>$129.00</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/barberton_daisy.png" alt="Blushing Bromeliad">
+                            <h4>Blushing Bromeliad</h4>
+                            <p>$139.00</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a href="registration.html">
+                            <img src="images/image 10.png" alt="Aluminum Plant">
+                            <h4>Aluminum Plant</h4>
+                            <p>$179.00</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#"><img src="images/Stroke 1.png"/></a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-menu li a, aside ul li a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
